@@ -1,0 +1,788 @@
+/* ==========================================================================
+   1. SIFIRLAMA VE GENEL SAYFA AYARLARI (2017-2018 Kurumsal Gazete Teması)
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fcfcfc;
+    color: #222;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px 20px 40px 20px;
+}
+
+/* ==========================================================================
+   2. HEADER VE MENÜ ALANI
+   ========================================================================== */
+header.site-header {
+    background: #fff;
+    border: 1px solid #111;
+    margin-bottom: 20px;
+    padding: 20px 25px 0 25px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+.logo-title {
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: Georgia, serif;
+}
+
+.header-date {
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+}
+
+nav.site-nav {
+    border-top: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+nav.site-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav.site-nav a {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #333;
+}
+
+nav.site-nav a:hover {
+    color: #990000;
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   3. ANASAYFA GRID DÜZENİ (Sol Akış & Sağ Sütun)
+   ========================================================================== */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 20px;
+    align-items: start;
+}
+
+.section-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #111;
+    color: #fff;
+    padding: 3px 6px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Sol Taraf: Genel Akış */
+.feed-container {
+    border: 1px solid #111;
+    background: #fff;
+    padding: 20px;
+}
+
+.feed-item {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+}
+
+.feed-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.feed-title {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 6px;
+}
+
+.feed-title a:hover {
+    color: #990000;
+}
+
+.feed-summary {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+/* Sol Akıştaki Meta & Rozetler */
+.feed-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.meta-primary {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 12px;
+    color: #555;
+    font-weight: 500;
+}
+
+.meta-category {
+    background: #111;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    letter-spacing: 0.5px;
+}
+
+.meta-separator {
+    color: #bbb;
+}
+
+.meta-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.mini-tag {
+    font-size: 11px;
+    color: #666;
+    background: #f2f2f2;
+    border: 1px solid #e0e0e0;
+    padding: 1px 6px;
+    text-transform: lowercase;
+}
+
+.mini-tag:hover {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+}
+
+/* ==========================================================================
+   4. SAĞ YAN SÜTUN (Öne Çıkan, Arşiv, Kategoriler)
+   ========================================================================== */
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.featured-container,
+.archive-container {
+    border: 1px solid #111;
+    background: #fff;
+    padding: 20px;
+}
+
+.featured-image-box {
+    width: 100%;
+    height: 220px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    overflow: hidden;
+}
+
+.featured-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-title {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.featured-title a:hover {
+    color: #990000;
+}
+
+.featured-summary {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.featured-meta {
+    font-size: 12px;
+    color: #777;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+/* Sağ Menü: Arşiv Akordeon */
+.archive-desc {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.archive-accordion {
+    border-top: 1px solid #ddd;
+}
+
+.archive-month-drawer {
+    border-bottom: 1px solid #eee;
+}
+
+.archive-month-trigger {
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    user-select: none;
+}
+
+.archive-month-trigger::-webkit-details-marker {
+    display: none;
+}
+
+.archive-month-trigger::before {
+    content: "▶";
+    font-size: 9px;
+    margin-right: 8px;
+    color: #555;
+}
+
+.archive-month-drawer[open] .archive-month-trigger::before {
+    content: "▼";
+}
+
+.archive-month-trigger:hover .month-name {
+    color: #990000;
+}
+
+.archive-count {
+    background: #eee;
+    color: #444;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 7px;
+    border: 1px solid #ddd;
+}
+
+.drawer-post-list {
+    list-style: none;
+    padding: 0 0 10px 18px;
+    font-size: 12px;
+}
+
+.drawer-post-list li {
+    padding: 5px 0;
+    border-bottom: 1px dashed #eee;
+    line-height: 1.4;
+}
+
+.drawer-post-list li:last-child {
+    border-bottom: none;
+}
+
+.drawer-post-list a:hover {
+    color: #990000;
+    text-decoration: underline;
+}
+
+/* Sağ Menü: Kategoriler Listesi */
+.category-sidebar-list {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.category-sidebar-list li {
+    border-bottom: 1px solid #eee;
+}
+
+.category-sidebar-list li:last-child {
+    border-bottom: none;
+}
+
+.category-sidebar-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.category-sidebar-list a:hover {
+    color: #990000;
+}
+
+/* ==========================================================================
+   5. POST DETAY SAYFASI
+   ========================================================================== */
+.post-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 20px;
+    align-items: start;
+}
+
+article.post-container {
+    border: 1px solid #111;
+    background: #fff;
+    padding: 35px;
+}
+
+.post-breadcrumb {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #777;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.post-breadcrumb a:hover {
+    color: #990000;
+}
+
+.post-title {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.post-lead {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #444;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-left: 3px solid #111;
+    padding-left: 15px;
+}
+
+.post-meta-bar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    margin-bottom: 25px;
+}
+
+.post-main-image {
+    width: 100%;
+    max-height: 400px;
+    background: #eee;
+    border: 1px solid #ddd;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.post-main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-content p {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
+.post-content h3 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin: 30px 0 15px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.post-content blockquote {
+    margin: 25px 0;
+    padding: 15px 20px;
+    background: #f9f9f9;
+    border-left: 4px solid #990000;
+    font-style: italic;
+}
+
+.post-tags {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag-title {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tag-pill {
+    font-size: 11px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 3px 8px;
+    color: #444;
+    text-transform: uppercase;
+}
+
+.tag-pill:hover {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+}
+
+/* Post Sayfası Sağ Yan Menüsü */
+aside.post-sidebar {
+    border: 1px solid #111;
+    background: #fff;
+    padding: 20px;
+}
+
+.sidebar-section-title {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #111;
+    color: #fff;
+    padding: 4px 8px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.sidebar-list-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.sidebar-list-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.sidebar-item-title {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 5px;
+}
+
+.sidebar-item-title a:hover {
+    color: #990000;
+}
+
+.sidebar-item-meta {
+    font-size: 11px;
+    color: #777;
+}
+
+/* Ortalanmış Paylaşım Butonları */
+.post-share-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+    margin: 35px 0 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background: #fafafa;
+}
+
+.share-title {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #444;
+    letter-spacing: 0.5px;
+}
+
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #111;
+    color: #111;
+    font-size: 15px;
+    background: #fff;
+}
+
+.share-btn:hover {
+    background: #111;
+    color: #fff;
+}
+
+/* Disqus Alanı */
+.disqus-container {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 2px solid #111;
+}
+
+/* ==========================================================================
+   6. DİĞER SAYFALAR (Arşiv Sayfası, Kategoriler, Hakkımızda)
+   ========================================================================== */
+.archive-page-container,
+.page-container {
+    border: 1px solid #111;
+    background: #fff;
+    padding: 35px;
+}
+
+.archive-header-box {
+    border-bottom: 2px solid #111;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.archive-main-title,
+.page-title {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.archive-main-desc,
+.page-lead {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.archive-group {
+    margin-bottom: 30px;
+}
+
+.archive-month-title {
+    font-size: 16px;
+    font-family: Georgia, serif;
+    background: #f4f4f4;
+    padding: 8px 12px;
+    border-left: 4px solid #111;
+    margin-bottom: 10px;
+}
+
+.archive-month-title .badge {
+    font-size: 11px;
+    font-family: sans-serif;
+    color: #666;
+    font-weight: normal;
+}
+
+.archive-posts-list {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.archive-posts-list li {
+    padding: 7px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.archive-posts-list .date {
+    color: #888;
+    font-size: 12px;
+    font-family: monospace;
+    margin-right: 10px;
+}
+
+.archive-posts-list a {
+    font-weight: 600;
+}
+
+.archive-posts-list a:hover {
+    color: #990000;
+    text-decoration: underline;
+}
+
+.archive-posts-list .category {
+    font-size: 11px;
+    color: #777;
+    margin-left: 8px;
+}
+
+.tags-cloud-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ==========================================================================
+   7. GÖMÜLÜ İÇERİK (YouTube & Tweet Embed)
+   ========================================================================== */
+.video-embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 25px 0;
+    border: 1px solid #111;
+    background: #000;
+}
+
+.video-embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+}
+
+/* ==========================================================================
+   8. FOOTER
+   ========================================================================== */
+.site-footer {
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+    padding-top: 15px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+/* ==========================================================================
+   9. MOBİL VE KÜÇÜK EKRANLAR (Responsive - 860px Altı)
+   ========================================================================== */
+@media (max-width: 860px) {
+    /* Anasayfa Tek Sütun */
+    .content-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Sağ sütundaki kutuları serbest bırak */
+    .right-sidebar {
+        display: contents;
+    }
+
+    /* 1. Sıra: Öne Çıkan Manşet EN TEPEYE */
+    .featured-container {
+        order: -2;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* 2. Sıra: Haber Akışı ORTAYA */
+    .feed-container {
+        order: -1;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* 3. Sıra: Arşiv ve Kategoriler EN ALTA TAM GENİŞLİK */
+    .archive-container {
+        order: 3;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Post Detay Sayfası Mobilde Tek Sütun */
+    .post-layout {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    article.post-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .post-title {
+        font-size: 24px;
+    }
+
+    aside.post-sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+/* LOGO VE AMBLEM STİLİ */
+.logo-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-logo-img {
+    width: 46px;   /* 34px'ten 46px'e büyüttük */
+    height: 46px;
+    object-fit: contain;
+    border-radius: 4px;
+}
