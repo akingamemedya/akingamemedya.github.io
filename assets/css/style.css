@@ -781,8 +781,8 @@ aside.post-sidebar {
 }
 
 .site-logo-img {
-    width: 46px;   /* 34px'ten 46px'e büyüttük */
-    height: 46px;
+    width: 60px;   /* 34px'ten 46px'e büyüttük */
+    height: 60px;
     object-fit: contain;
     border-radius: 4px;
 }
