@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>XPASS</title>
-    <description>Güncel oyun haberlei</description>
+    <title>GÖK Medya</title>
+    <description>Bağımsız teknoloji haberleri</description>
     <link>https://orbitnode-dev.github.io/</link>
     <atom:link href="https://orbitnode-dev.github.io/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sun, 20 Sep 2026 15:12:57 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2026 15:41:20 +0300</lastBuildDate>
     
   </channel>
 </rss>
