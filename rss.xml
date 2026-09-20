@@ -5,7 +5,15 @@
     <description>Bağımsız teknoloji haberleri</description>
     <link>https://orbitnode-dev.github.io/</link>
     <atom:link href="https://orbitnode-dev.github.io/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sun, 20 Sep 2026 16:00:32 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2026 16:04:54 +0300</lastBuildDate>
+    
+      <item>
+        <title>Test yazısı</title>
+        <description>Bu bir test yazısıdır</description>
+        <pubDate>Sun, 20 Sep 2026 00:00:00 +0300</pubDate>
+        <link>https://orbitnode-dev.github.io/deneme/2026/09/20/test-yaz-s/</link>
+        <guid isPermaLink="true">https://orbitnode-dev.github.io/deneme/2026/09/20/test-yaz-s/</guid>
+      </item>
     
   </channel>
 </rss>
