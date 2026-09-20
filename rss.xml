@@ -5,14 +5,15 @@
     <description>Bağımsız teknoloji haberleri</description>
     <link>https://orbitnode-dev.github.io/</link>
     <atom:link href="https://orbitnode-dev.github.io/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sun, 20 Sep 2026 16:12:29 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2026 21:36:19 +0300</lastBuildDate>
     
       <item>
-        <title>Test yazısı</title>
-        <description>Bu bir test yazısıdır</description>
+        <title>GTA 6 Türkçe Olacak mı? Take-Two Toplantısından Neler Çıktı?</title>
+        <description>Kısa açıklama:
+GTA 6&apos;nın Türkçe dil desteğine sahip olup olmayacağı yeniden gündemde. Son günlerde ortaya atılan “Türkçe onaylandı” iddiasının ardından Take-Two ile görüşen Sercan Sülün, şirketin konu hakkında ne olumlu ne de olumsuz net bir yanıt verdiğini açıkladı.</description>
         <pubDate>Sun, 20 Sep 2026 00:00:00 +0300</pubDate>
-        <link>https://orbitnode-dev.github.io/deneme/2026/09/20/test-yaz-s/</link>
-        <guid isPermaLink="true">https://orbitnode-dev.github.io/deneme/2026/09/20/test-yaz-s/</guid>
+        <link>https://orbitnode-dev.github.io/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/</link>
+        <guid isPermaLink="true">https://orbitnode-dev.github.io/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/</guid>
       </item>
     
   </channel>
