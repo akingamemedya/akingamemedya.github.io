@@ -27,6 +27,10 @@
 
 
     <!-- FontAwesome 6 (İkonlar İçin) -->
+     <!-- GHOST CMS TİPOGRAFİSİ (Inter & Newsreader) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
@@ -34,40 +38,51 @@
 <body>
     <div class="wrapper">
         <header class="site-header">
-    <div class="header-top">
+    <!-- ÜST BAR: Sadece Net Tarih ve Tema Değiştirici -->
+    <div class="header-top-bar">
+        <div class="header-date">
+            <i class="fa-regular fa-calendar"></i> 
+21
+Eylül
+  
+2026
+
+        </div>
+        
+        <button id="theme-toggle" class="theme-toggle-btn" title="Karanlık / Aydınlık Mod" aria-label="Tema Değiştir">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+    </div>
+
+    <!-- LOGO VE SLOGAN -->
+    <div class="header-masthead">
         <h1 class="logo-title">
             <a href="/" class="logo-brand">
-                
-                <!-- 1. Görsel Logo (Sadece 'text' seçili değilse gösterir) -->
                 
                 <img src="/assets/images/favicon.ico" alt="Logo" class="site-logo-img" onerror="this.style.display='none'">
                 
 
-                <!-- 2. Yazı Logo (Sadece 'image' seçili değilse gösterir) -->
                 
                 <span>Gün manşet</span>
                 
-
             </a>
         </h1>
-        <div class="header-date">
-20
-Eylül
-  
-2026
-</div>
+        
+        <p class="site-tagline">Bağımsız teknoloji haberleri</p>
+        
     </div>
+
+    <!-- MENÜ -->
     <nav class="site-nav">
         <ul>
             <li><a href="/">Anasayfa</a></li>
             <li><a href="/kategoriler">Kategoriler</a></li>
             <li><a href="/arsiv">Arşiv</a></li>
             <li><a href="/hakkimizda">Hakkımızda</a></li>
-            <li><a href="/rss.xml" target="_blank">RSS</a></li>
+            <li><a href="/rss.xml" target="_blank"><i class="fa-solid fa-rss"></i> RSS</a></li>
         </ul>
     </nav>
 </header>
-
         <main class="page-container">
     <div class="archive-header-box">
         <h1 class="archive-main-title">Konu Etiketleri</h1>
@@ -80,501 +95,21 @@ Eylül
     <!-- Üstte hızlı geçiş butonları -->
     <div class="tags-cloud-bar">
         
-        <a href="#12tbsızıntı" class="tag-pill">#12tbsızıntı (1)</a>
-        
-        <a href="#gta6" class="tag-pill">#GTA6 (1)</a>
-        
-        <a href="#pc" class="tag-pill">#PC (1)</a>
-        
-        <a href="#counter-strike" class="tag-pill">#counter-strike (1)</a>
-        
-        <a href="#csgo" class="tag-pill">#csgo (1)</a>
-        
-        <a href="#f-stop" class="tag-pill">#f-stop (1)</a>
-        
-        <a href="#gta-6" class="tag-pill">#gta 6 (1)</a>
-        
-        <a href="#gta-6-haberleri" class="tag-pill">#gta 6 haberleri (1)</a>
-        
-        <a href="#gta-6-son-dakika" class="tag-pill">#gta 6 son dakika (1)</a>
-        
-        <a href="#gta-6-türkçe" class="tag-pill">#gta 6 türkçe (1)</a>
-        
-        <a href="#gta-6-türkçe-altyazı" class="tag-pill">#gta 6 türkçe altyazı (1)</a>
-        
-        <a href="#gta-6-türkçe-dil-desteği" class="tag-pill">#gta 6 türkçe dil desteği (1)</a>
-        
-        <a href="#gta-vi" class="tag-pill">#gta vi (1)</a>
-        
-        <a href="#half-life" class="tag-pill">#half-life (1)</a>
-        
-        <a href="#half-life2" class="tag-pill">#half-life2 (1)</a>
-        
-        <a href="#half-life2episode3" class="tag-pill">#half-life2episode3 (1)</a>
-        
-        <a href="#half-life3" class="tag-pill">#half-life3 (1)</a>
-        
-        <a href="#left4dead" class="tag-pill">#left4dead (1)</a>
-        
-        <a href="#oyunhaberleri" class="tag-pill">#oyunhaberleri (1)</a>
-        
-        <a href="#pcoyunları" class="tag-pill">#pcoyunları (1)</a>
-        
-        <a href="#portal2" class="tag-pill">#portal2 (1)</a>
-        
-        <a href="#rockstar-games" class="tag-pill">#rockstar games (1)</a>
-        
-        <a href="#steam" class="tag-pill">#steam (1)</a>
-        
-        <a href="#steam2" class="tag-pill">#steam2 (1)</a>
-        
-        <a href="#steamteraleak" class="tag-pill">#steamteraleak (1)</a>
-        
-        <a href="#strauss-zelnick" class="tag-pill">#strauss zelnick (1)</a>
-        
-        <a href="#take-two" class="tag-pill">#take-two (1)</a>
-        
-        <a href="#tanproduction" class="tag-pill">#tanproduction (1)</a>
-        
-        <a href="#tanproduction-gta-6" class="tag-pill">#tanproduction gta 6 (1)</a>
-        
-        <a href="#türkçe-dublaj" class="tag-pill">#türkçe dublaj (1)</a>
-        
-        <a href="#valve" class="tag-pill">#valve (1)</a>
-        
-        <a href="#valvesızıntı" class="tag-pill">#valvesızıntı (1)</a>
-        
-        <a href="#çikiş" class="tag-pill">#ÇIKIŞ (1)</a>
+        <a href="#test" class="tag-pill">#Test (1)</a>
         
     </div>
 
     <!-- Her etiketin altındaki haber listesi -->
     <div class="tags-content-list">
         
-        <section class="archive-group" id="12tbsızıntı">
-            <h2 class="archive-month-title">#12tbsızıntı <span class="badge">(1 İçerik)</span></h2>
+        <section class="archive-group" id="test">
+            <h2 class="archive-month-title">#Test <span class="badge">(1 İçerik)</span></h2>
             <ul class="archive-posts-list">
                 
                 <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="gta6">
-            <h2 class="archive-month-title">#GTA6 <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/gta-6-hangi-platformlara-k-yor-i-te-resmi-k-tarihi-ve-pc-durumu/">GTA 6 Hangi Platformlara Çıkıyor? İşte Resmi Çıkış Tarihi ve PC Durumu</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="pc">
-            <h2 class="archive-month-title">#PC <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/gta-6-hangi-platformlara-k-yor-i-te-resmi-k-tarihi-ve-pc-durumu/">GTA 6 Hangi Platformlara Çıkıyor? İşte Resmi Çıkış Tarihi ve PC Durumu</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="counter-strike">
-            <h2 class="archive-month-title">#counter-strike <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="csgo">
-            <h2 class="archive-month-title">#csgo <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="f-stop">
-            <h2 class="archive-month-title">#f-stop <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="gta-6">
-            <h2 class="archive-month-title">#gta 6 <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/">GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="gta-6-haberleri">
-            <h2 class="archive-month-title">#gta 6 haberleri <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/">GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="gta-6-son-dakika">
-            <h2 class="archive-month-title">#gta 6 son dakika <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/">GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="gta-6-türkçe">
-            <h2 class="archive-month-title">#gta 6 türkçe <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/">GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="gta-6-türkçe-altyazı">
-            <h2 class="archive-month-title">#gta 6 türkçe altyazı <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/">GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="gta-6-türkçe-dil-desteği">
-            <h2 class="archive-month-title">#gta 6 türkçe dil desteği <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/">GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="gta-vi">
-            <h2 class="archive-month-title">#gta vi <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/">GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="half-life">
-            <h2 class="archive-month-title">#half-life <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="half-life2">
-            <h2 class="archive-month-title">#half-life2 <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="half-life2episode3">
-            <h2 class="archive-month-title">#half-life2episode3 <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="half-life3">
-            <h2 class="archive-month-title">#half-life3 <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="left4dead">
-            <h2 class="archive-month-title">#left4dead <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="oyunhaberleri">
-            <h2 class="archive-month-title">#oyunhaberleri <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="pcoyunları">
-            <h2 class="archive-month-title">#pcoyunları <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="portal2">
-            <h2 class="archive-month-title">#portal2 <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="rockstar-games">
-            <h2 class="archive-month-title">#rockstar games <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/">GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="steam">
-            <h2 class="archive-month-title">#steam <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="steam2">
-            <h2 class="archive-month-title">#steam2 <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="steamteraleak">
-            <h2 class="archive-month-title">#steamteraleak <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="strauss-zelnick">
-            <h2 class="archive-month-title">#strauss zelnick <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/">GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="take-two">
-            <h2 class="archive-month-title">#take-two <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/">GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="tanproduction">
-            <h2 class="archive-month-title">#tanproduction <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/">GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="tanproduction-gta-6">
-            <h2 class="archive-month-title">#tanproduction gta 6 <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/">GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="türkçe-dublaj">
-            <h2 class="archive-month-title">#türkçe dublaj <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/">GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="valve">
-            <h2 class="archive-month-title">#valve <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="valvesızıntı">
-            <h2 class="archive-month-title">#valvesızıntı <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                    <span class="category">[Oyun]</span>
-                </li>
-                
-            </ul>
-        </section>
-        
-        <section class="archive-group" id="çikiş">
-            <h2 class="archive-month-title">#ÇIKIŞ <span class="badge">(1 İçerik)</span></h2>
-            <ul class="archive-posts-list">
-                
-                <li>
-                    <span class="date">20.09.2026</span>
-                    <a href="/oyun/2026/09/20/gta-6-hangi-platformlara-k-yor-i-te-resmi-k-tarihi-ve-pc-durumu/">GTA 6 Hangi Platformlara Çıkıyor? İşte Resmi Çıkış Tarihi ve PC Durumu</a>
-                    <span class="category">[Oyun]</span>
+                    <span class="date">21.09.2026</span>
+                    <a href="/test/2026/09/21/bu-bir-test-ba-l-d-r/">Bu bir test başlığıdır</a>
+                    <span class="category">[Test]</span>
                 </li>
                 
             </ul>
@@ -583,8 +118,43 @@ Eylül
     </div>
 </main>
         <footer class="site-footer">
-    <p>&copy; 2026 Gün manşet. Tüm hakları saklıdır. GitHub Pages üzerinde barındırılmaktadır.</p>
+    <div class="footer-simple-content">
+        <div class="footer-left">
+            <strong>Gün manşet</strong> &copy; 2026 &bull;  Bağımsız teknoloji haberleri 
+        </div>
+        <div class="footer-right">
+            <a href="/">Anasayfa</a>
+            <a href="/arsiv">Arşiv</a>
+            <a href="/rss.xml" target="_blank">RSS</a>
+            <a href="https://github.com/orbitnode-dev" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+    </div>
 </footer>
+
+<!-- TEMA MOTORU -->
+<script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        
+        if (isDark) {
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            themeIcon.classList.replace('fa-sun', 'fa-moon');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
     </div>
 </body>
 </html>

@@ -27,6 +27,10 @@
 
 
     <!-- FontAwesome 6 (İkonlar İçin) -->
+     <!-- GHOST CMS TİPOGRAFİSİ (Inter & Newsreader) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
@@ -34,249 +38,132 @@
 <body>
     <div class="wrapper">
         <header class="site-header">
-    <div class="header-top">
+    <!-- ÜST BAR: Sadece Net Tarih ve Tema Değiştirici -->
+    <div class="header-top-bar">
+        <div class="header-date">
+            <i class="fa-regular fa-calendar"></i> 
+21
+Eylül
+  
+2026
+
+        </div>
+        
+        <button id="theme-toggle" class="theme-toggle-btn" title="Karanlık / Aydınlık Mod" aria-label="Tema Değiştir">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+    </div>
+
+    <!-- LOGO VE SLOGAN -->
+    <div class="header-masthead">
         <h1 class="logo-title">
             <a href="/" class="logo-brand">
-                
-                <!-- 1. Görsel Logo (Sadece 'text' seçili değilse gösterir) -->
                 
                 <img src="/assets/images/favicon.ico" alt="Logo" class="site-logo-img" onerror="this.style.display='none'">
                 
 
-                <!-- 2. Yazı Logo (Sadece 'image' seçili değilse gösterir) -->
                 
                 <span>Gün manşet</span>
                 
-
             </a>
         </h1>
-        <div class="header-date">
-20
-Eylül
-  
-2026
-</div>
+        
+        <p class="site-tagline">Bağımsız teknoloji haberleri</p>
+        
     </div>
+
+    <!-- MENÜ -->
     <nav class="site-nav">
         <ul>
             <li><a href="/">Anasayfa</a></li>
             <li><a href="/kategoriler">Kategoriler</a></li>
             <li><a href="/arsiv">Arşiv</a></li>
             <li><a href="/hakkimizda">Hakkımızda</a></li>
-            <li><a href="/rss.xml" target="_blank">RSS</a></li>
+            <li><a href="/rss.xml" target="_blank"><i class="fa-solid fa-rss"></i> RSS</a></li>
         </ul>
     </nav>
 </header>
-
         <main class="content-grid">
-    <!-- SOL: GENEL AKIŞ -->
+    <!-- SOL: GENEL AKIŞ (Sayfalanmış) -->
     <section class="feed-container">
         <span class="section-label">Son Haberler</span>
 
         
         <article class="feed-item">
             <h2 class="feed-title">
-                <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
+                <a href="/test/2026/09/21/bu-bir-test-ba-l-d-r/">Bu bir test başlığıdır</a>
             </h2>
-            <p class="feed-summary">Valve'ın eski Steam2 altyapısından geldiği bildirilen yaklaşık 12-13 TB'lık arşiv internette ortaya çıktı. Portal 2'nin erken sürümleri, F-Stop materyalleri, Left 4 Dead ve CS:GO'nun geliştirme dosyaları ile Half-Life 2: Episode 3'le ilişkilendirilen içerikler yeniden gün yüzüne çıktı. Ancak sızıntı, Half-Life 3'ün oynanabilir bir sürümünün bulunduğunu doğrulamıyor.</p>
+            <p class="feed-summary">Yakında sizlerleyiz!</p>
             
             <div class="feed-meta">
                 <div class="meta-primary">
                     
-                        <a href="/kategoriler#oyun" class="meta-category">
-                            Oyun
+                        <a href="/kategoriler#test" class="meta-category">
+                            Test
                         </a>
                     
-                    <span class="meta-date">20.09.2026</span>
+                    <span class="meta-date">21.09.2026</span>
                     <span class="meta-separator">—</span>
-                    <span class="meta-author">Görkem Çalışkan</span>
+                    <span class="meta-author">Test</span>
                 </div>
 
                 
                 <div class="meta-tags">
                     
-                        <a href="/etiketler#valve" class="mini-tag">#valve</a>
-                    
-                        <a href="/etiketler#steam" class="mini-tag">#steam</a>
-                    
-                        <a href="/etiketler#steamteraleak" class="mini-tag">#steamteraleak</a>
-                    
-                        <a href="/etiketler#12tbsızıntı" class="mini-tag">#12tbsızıntı</a>
-                    
-                        <a href="/etiketler#valvesızıntı" class="mini-tag">#valvesızıntı</a>
-                    
-                        <a href="/etiketler#portal2" class="mini-tag">#portal2</a>
-                    
-                        <a href="/etiketler#half-life" class="mini-tag">#half-life</a>
-                    
-                        <a href="/etiketler#half-life2" class="mini-tag">#half-life2</a>
-                    
-                        <a href="/etiketler#half-life2episode3" class="mini-tag">#half-life2episode3</a>
-                    
-                        <a href="/etiketler#half-life3" class="mini-tag">#half-life3</a>
-                    
-                        <a href="/etiketler#left4dead" class="mini-tag">#left4dead</a>
-                    
-                        <a href="/etiketler#counter-strike" class="mini-tag">#counter-strike</a>
-                    
-                        <a href="/etiketler#csgo" class="mini-tag">#csgo</a>
-                    
-                        <a href="/etiketler#f-stop" class="mini-tag">#f-stop</a>
-                    
-                        <a href="/etiketler#steam2" class="mini-tag">#steam2</a>
-                    
-                        <a href="/etiketler#oyunhaberleri" class="mini-tag">#oyunhaberleri</a>
-                    
-                        <a href="/etiketler#pcoyunları" class="mini-tag">#pcoyunları</a>
+                        <a href="/etiketler#test" class="mini-tag">#Test</a>
                     
                 </div>
                 
             </div>
         </article>
         
-        <article class="feed-item">
-            <h2 class="feed-title">
-                <a href="/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/">GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!</a>
-            </h2>
-            <p class="feed-summary">GTA 6'nın Türkçe olup olmayacağı konusunda son haftalarda dikkat çeken gelişmeler yaşanıyor. TanProduction'ın 26 dakikalık Türkçe dublajı, Take-Two CEO'su Strauss Zelnick ile kurulduğu açıklanan temas ve şirket iç toplantısında Türkçe desteğinin onaylandığı yönündeki doğrulanmamış iddia, beklentileri yeniden gündeme taşıdı. Ancak Rockstar Games'in mevcut resmi dil listesinde Türkçe hâlâ yer almıyor.</p>
-            
-            <div class="feed-meta">
-                <div class="meta-primary">
-                    
-                        <a href="/kategoriler#oyun" class="meta-category">
-                            Oyun
-                        </a>
-                    
-                    <span class="meta-date">20.09.2026</span>
-                    <span class="meta-separator">—</span>
-                    <span class="meta-author">Görkem Çalışkan</span>
-                </div>
 
-                
-                <div class="meta-tags">
-                    
-                        <a href="/etiketler#gta-6" class="mini-tag">#gta 6</a>
-                    
-                        <a href="/etiketler#gta-vi" class="mini-tag">#gta vi</a>
-                    
-                        <a href="/etiketler#gta-6-türkçe" class="mini-tag">#gta 6 türkçe</a>
-                    
-                        <a href="/etiketler#rockstar-games" class="mini-tag">#rockstar games</a>
-                    
-                        <a href="/etiketler#take-two" class="mini-tag">#take-two</a>
-                    
-                        <a href="/etiketler#türkçe-dublaj" class="mini-tag">#türkçe dublaj</a>
-                    
-                        <a href="/etiketler#tanproduction" class="mini-tag">#tanproduction</a>
-                    
-                        <a href="/etiketler#tanproduction-gta-6" class="mini-tag">#tanproduction gta 6</a>
-                    
-                        <a href="/etiketler#strauss-zelnick" class="mini-tag">#strauss zelnick</a>
-                    
-                        <a href="/etiketler#gta-6-haberleri" class="mini-tag">#gta 6 haberleri</a>
-                    
-                        <a href="/etiketler#gta-6-türkçe-dil-desteği" class="mini-tag">#gta 6 türkçe dil desteği</a>
-                    
-                        <a href="/etiketler#gta-6-türkçe-altyazı" class="mini-tag">#gta 6 türkçe altyazı</a>
-                    
-                        <a href="/etiketler#gta-6-son-dakika" class="mini-tag">#gta 6 son dakika</a>
-                    
-                </div>
-                
-            </div>
-        </article>
-        
-        <article class="feed-item">
-            <h2 class="feed-title">
-                <a href="/oyun/2026/09/20/gta-6-hangi-platformlara-k-yor-i-te-resmi-k-tarihi-ve-pc-durumu/">GTA 6 Hangi Platformlara Çıkıyor? İşte Resmi Çıkış Tarihi ve PC Durumu</a>
-            </h2>
-            <p class="feed-summary">GTA 6, 19 Kasım 2026'da PlayStation 5 ve Xbox Series X|S için çıkacak. Rockstar Games henüz PC sürümü için bir çıkış tarihi açıklamadı. PS4, Xbox One ve Nintendo platformları için de resmi bir sürüm duyurulmuş değil.</p>
-            
-            <div class="feed-meta">
-                <div class="meta-primary">
-                    
-                        <a href="/kategoriler#oyun" class="meta-category">
-                            Oyun
-                        </a>
-                    
-                    <span class="meta-date">20.09.2026</span>
-                    <span class="meta-separator">—</span>
-                    <span class="meta-author">Görkem Çalışkan</span>
-                </div>
-
-                
-                <div class="meta-tags">
-                    
-                        <a href="/etiketler#gta6" class="mini-tag">#GTA6</a>
-                    
-                        <a href="/etiketler#pc" class="mini-tag">#PC</a>
-                    
-                        <a href="/etiketler#çikiş" class="mini-tag">#ÇIKIŞ</a>
-                    
-                </div>
-                
-            </div>
-        </article>
+        <!-- DİNAMİK SAYFALAMA BUTONLARI (1, 2, 3...) -->
         
     </section>
 
-    <!-- SAĞ: YAN SÜTUN -->
+    <!-- SAĞ: YAN SÜTUN (Aynen Kalıyor) -->
     <aside class="right-sidebar">
         
-        <!-- 1. ÖNE ÇIKAN KUTUSU -->
+        <!-- Öne Çıkan -->
         <div class="featured-container">
             <span class="section-label">Öne Çıkan</span>
-
             
             
-                
-                <!-- Akıllı Resim Alanı: Sadece resim varsa gösterir, URL'yi otomatik tanır -->
                 
                 <div class="featured-image-box">
                     
-                        <img src="https://imgrosetta.webtekno.com/file/682057/682057-1200x675.jpg" alt="GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_E_Z2Spv17SBA6QFrULRSEzOLKCRydtQl-ISnz4uCP4wmxpYTmFfl6Wk&s=10" alt="Bu bir test başlığıdır">
                     
                 </div>
                 
 
                 <h2 class="featured-title">
-                    <a href="/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/">GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!</a>
+                    <a href="/test/2026/09/21/bu-bir-test-ba-l-d-r/">Bu bir test başlığıdır</a>
                 </h2>
-                <p class="featured-summary">GTA 6'nın Türkçe olup olmayacağı konusunda son haftalarda dikkat çeken gelişmeler yaşanıyor. TanProduction'ın 26 dakikalık Türkçe dublajı, Take-Two CEO'su Strauss Zelnick ile kurulduğu açıklanan temas ve şirket iç toplantısında Türkçe desteğinin onaylandığı yönündeki doğrulanmamış iddia, beklentileri yeniden gündeme taşıdı. Ancak Rockstar Games'in mevcut resmi dil listesinde Türkçe hâlâ yer almıyor.</p>
+                <p class="featured-summary">Yakında sizlerleyiz!</p>
                 <div class="featured-meta">
-                    <strong>Yazar:</strong> Görkem Çalışkan &nbsp;|&nbsp; 
-                    <strong>Kategori:</strong> Oyun
+                    <strong>Yazar:</strong> Test &nbsp;|&nbsp; 
+                    <strong>Kategori:</strong> Test
                 </div>
             
         </div>
 
-        <!-- 2. AÇILIR-KAPANIR ARŞİV KUTUSU -->
+        <!-- Arşiv -->
         <div class="archive-container">
             <span class="section-label">Haber Arşivi</span>
             <p class="archive-desc">Aylara tıklayarak haberleri listeleyebilirsiniz:</p>
-            
-            
             
             <div class="archive-accordion">
                 
                 <details class="archive-month-drawer">
                     <summary class="archive-month-trigger">
                         <span class="month-name">September 2026</span>
-                        <span class="archive-count">3</span>
+                        <span class="archive-count">1</span>
                     </summary>
                     <ul class="drawer-post-list">
                         
-                        <li>
-                            <a href="/oyun/2026/09/20/valve-n-12-tb-l-k-steam-ar-ivi-s-zd-portal-2-betas-ve-half-life-2-episode-3-i-zleri-ortaya-kt/">Valve'ın 12 TB'lık Steam Arşivi Sızdı: Portal 2 Betası ve Half-Life 2: Episode 3 İzleri Ortaya Çıktı</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/oyun/2026/09/20/gta-6-t-rk-e-olacak-m-take-two-toplant-s-ndan-neler-kt/">GTA 6 Türkçe Olacak mı? Take-Two Teması, İç Toplantı İddiası ve TanProduction’ın Yeni Dublajı Gündemde!</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/oyun/2026/09/20/gta-6-hangi-platformlara-k-yor-i-te-resmi-k-tarihi-ve-pc-durumu/">GTA 6 Hangi Platformlara Çıkıyor? İşte Resmi Çıkış Tarihi ve PC Durumu</a>
-                        </li>
+                        <li><a href="/test/2026/09/21/bu-bir-test-ba-l-d-r/">Bu bir test başlığıdır</a></li>
                         
                     </ul>
                 </details>
@@ -284,15 +171,15 @@ Eylül
             </div>
         </div>
 
-        <!-- 3. KATEGORİLER KUTUSU -->
+        <!-- Kategoriler -->
         <div class="archive-container category-box">
             <span class="section-label">Kategoriler</span>
             <ul class="category-sidebar-list">
                 
                 <li>
-                    <a href="/kategoriler#oyun">
-                        <span>Oyun</span>
-                        <span class="archive-count">3</span>
+                    <a href="/kategoriler#test">
+                        <span>Test</span>
+                        <span class="archive-count">1</span>
                     </a>
                 </li>
                 
@@ -302,8 +189,43 @@ Eylül
     </aside>
 </main>
         <footer class="site-footer">
-    <p>&copy; 2026 Gün manşet. Tüm hakları saklıdır. GitHub Pages üzerinde barındırılmaktadır.</p>
+    <div class="footer-simple-content">
+        <div class="footer-left">
+            <strong>Gün manşet</strong> &copy; 2026 &bull;  Bağımsız teknoloji haberleri 
+        </div>
+        <div class="footer-right">
+            <a href="/">Anasayfa</a>
+            <a href="/arsiv">Arşiv</a>
+            <a href="/rss.xml" target="_blank">RSS</a>
+            <a href="https://github.com/orbitnode-dev" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+    </div>
 </footer>
+
+<!-- TEMA MOTORU -->
+<script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        
+        if (isDark) {
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            themeIcon.classList.replace('fa-sun', 'fa-moon');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
     </div>
 </body>
 </html>

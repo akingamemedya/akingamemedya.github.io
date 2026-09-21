@@ -27,6 +27,10 @@
 
 
     <!-- FontAwesome 6 (İkonlar İçin) -->
+     <!-- GHOST CMS TİPOGRAFİSİ (Inter & Newsreader) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
@@ -34,40 +38,51 @@
 <body>
     <div class="wrapper">
         <header class="site-header">
-    <div class="header-top">
+    <!-- ÜST BAR: Sadece Net Tarih ve Tema Değiştirici -->
+    <div class="header-top-bar">
+        <div class="header-date">
+            <i class="fa-regular fa-calendar"></i> 
+21
+Eylül
+  
+2026
+
+        </div>
+        
+        <button id="theme-toggle" class="theme-toggle-btn" title="Karanlık / Aydınlık Mod" aria-label="Tema Değiştir">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+    </div>
+
+    <!-- LOGO VE SLOGAN -->
+    <div class="header-masthead">
         <h1 class="logo-title">
             <a href="/" class="logo-brand">
-                
-                <!-- 1. Görsel Logo (Sadece 'text' seçili değilse gösterir) -->
                 
                 <img src="/assets/images/favicon.ico" alt="Logo" class="site-logo-img" onerror="this.style.display='none'">
                 
 
-                <!-- 2. Yazı Logo (Sadece 'image' seçili değilse gösterir) -->
                 
                 <span>Gün manşet</span>
                 
-
             </a>
         </h1>
-        <div class="header-date">
-20
-Eylül
-  
-2026
-</div>
+        
+        <p class="site-tagline">Bağımsız teknoloji haberleri</p>
+        
     </div>
+
+    <!-- MENÜ -->
     <nav class="site-nav">
         <ul>
             <li><a href="/">Anasayfa</a></li>
             <li><a href="/kategoriler">Kategoriler</a></li>
             <li><a href="/arsiv">Arşiv</a></li>
             <li><a href="/hakkimizda">Hakkımızda</a></li>
-            <li><a href="/rss.xml" target="_blank">RSS</a></li>
+            <li><a href="/rss.xml" target="_blank"><i class="fa-solid fa-rss"></i> RSS</a></li>
         </ul>
     </nav>
 </header>
-
         <div class="page-container">
     <h1 class="page-title">Hakkımızda</h1>
     <div class="page-lead">
@@ -80,8 +95,43 @@ Eylül
 </div>
 
         <footer class="site-footer">
-    <p>&copy; 2026 Gün manşet. Tüm hakları saklıdır. GitHub Pages üzerinde barındırılmaktadır.</p>
+    <div class="footer-simple-content">
+        <div class="footer-left">
+            <strong>Gün manşet</strong> &copy; 2026 &bull;  Bağımsız teknoloji haberleri 
+        </div>
+        <div class="footer-right">
+            <a href="/">Anasayfa</a>
+            <a href="/arsiv">Arşiv</a>
+            <a href="/rss.xml" target="_blank">RSS</a>
+            <a href="https://github.com/orbitnode-dev" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+    </div>
 </footer>
+
+<!-- TEMA MOTORU -->
+<script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        
+        if (isDark) {
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            themeIcon.classList.replace('fa-sun', 'fa-moon');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
     </div>
 </body>
 </html>
