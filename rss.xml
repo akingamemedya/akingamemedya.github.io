@@ -5,14 +5,22 @@
     <description>Bağımsız oyun ve teknoloji haberleri</description>
     <link>https://akingamemedya.github.io/</link>
     <atom:link href="https://akingamemedya.github.io/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 22 Sep 2026 19:05:30 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 19:14:53 +0300</lastBuildDate>
     
       <item>
-        <title>Bu bir test başlığıdır</title>
-        <description>Yakında sizlerleyiz!</description>
-        <pubDate>Mon, 21 Sep 2026 00:00:00 +0300</pubDate>
-        <link>https://akingamemedya.github.io/test/2026/09/21/bu-bir-test-ba-l-d-r/</link>
-        <guid isPermaLink="true">https://akingamemedya.github.io/test/2026/09/21/bu-bir-test-ba-l-d-r/</guid>
+        <title>Xbox&apos;ta Yeni İşten Çıkarma Dalgası: 268 Çalışan Daha Etkilendi</title>
+        <description>Microsoft&apos;un Xbox bölümünde devam eden yeniden yapılanmanın yeni aşamasında 268 pozisyon kaldırıldı. Temmuz ayında açıklanan 3.200 kişilik planın yaklaşık dörtte üçünün tamamlandığı belirtilirken, bazı Xbox stüdyolarının geleceği ve serilerin yönetim yapısı da değişiyor.</description>
+        <pubDate>Tue, 22 Sep 2026 00:00:00 +0300</pubDate>
+        <link>https://akingamemedya.github.io/oyun/2026/09/22/xbox-ta-yeni-i-ten-karma-dalgas-268-al-an-daha-etkilendi/</link>
+        <guid isPermaLink="true">https://akingamemedya.github.io/oyun/2026/09/22/xbox-ta-yeni-i-ten-karma-dalgas-268-al-an-daha-etkilendi/</guid>
+      </item>
+    
+      <item>
+        <title>RuneScape: Dragonwilds 1.0 Sürümüne Geçti: Erken Erişim Dönemi Sona Erdi</title>
+        <description>Jagex&apos;in RuneScape evreninde geçen hayatta kalma ve crafting oyunu Dragonwilds, 15 Eylül&apos;de 1.0 sürümüne geçti. Oyun artık PC&apos;nin yanı sıra PlayStation 5, Xbox Series X|S ve Nintendo Switch 2&apos;de de oynanabiliyor.</description>
+        <pubDate>Tue, 22 Sep 2026 00:00:00 +0300</pubDate>
+        <link>https://akingamemedya.github.io/oyun/2026/09/22/runescape-dragonwilds-1-0-s-r-m-ne-ge-ti-erken-eri-im-d-nemi-sona-erdi/</link>
+        <guid isPermaLink="true">https://akingamemedya.github.io/oyun/2026/09/22/runescape-dragonwilds-1-0-s-r-m-ne-ge-ti-erken-eri-im-d-nemi-sona-erdi/</guid>
       </item>
     
   </channel>
