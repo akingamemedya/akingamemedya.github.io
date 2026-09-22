@@ -1,5 +1,5 @@
 /* ==========================================================================
-   1. SIFIRLAMA VE YUMUŞAK TIPOGRAFI (Ghost CMS Touch)
+   1. SIFIRLAMA VE OYUN BASINI TIPOGRAFISI (Bebas Neue & Inter)
    ========================================================================== */
 * {
     box-sizing: border-box;
@@ -11,8 +11,8 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background-color: #fcfcfc;
     color: #1a1a1a;
-    line-height: 1.75;
-    letter-spacing: -0.012em;
+    line-height: 1.7;
+    letter-spacing: -0.01em;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -28,12 +28,12 @@ a {
 }
 
 /* ==========================================================================
-   2. HEADER & MASTHEAD (Simetrik ve Ferah)
+   2. HEADER & MENÜ (Anonymous Çeviri Stili Tok Menü)
    ========================================================================== */
 header.site-header {
     background: #fff;
     border: 1px solid #111;
-    border-radius: 3px;
+    border-radius: 2px;
     margin-bottom: 25px;
     padding: 16px 28px 0 28px;
 }
@@ -45,9 +45,9 @@ header.site-header {
     border-bottom: 1px solid #e8e8e8;
     padding-bottom: 10px;
     margin-bottom: 14px;
-    font-size: 12.5px;
+    font-size: 13px;
     color: #555;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .header-date i {
@@ -57,7 +57,7 @@ header.site-header {
 .theme-toggle-btn {
     background: transparent;
     border: 1px solid #111;
-    border-radius: 3px;
+    border-radius: 2px;
     padding: 4px 10px;
     cursor: pointer;
     font-size: 13px;
@@ -84,28 +84,31 @@ header.site-header {
     width: 52px;
     height: 52px;
     object-fit: contain;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
+/* ANONYMOUS TARZI BÜYÜK TOK LOGO */
 .logo-title {
-    font-family: 'Newsreader', Georgia, serif;
-    font-size: 34px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 46px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
+    line-height: 1;
 }
 
 .site-tagline {
-    font-size: 13.5px;
+    font-size: 13px;
     color: #666;
-    margin-top: 5px;
-    font-family: 'Newsreader', Georgia, serif;
-    font-style: italic;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 
+/* MENÜ: Sert ve Tok Başlıklar */
 nav.site-nav {
     border-top: 1px solid #e8e8e8;
-    padding: 12px 0;
+    padding: 10px 0;
 }
 
 nav.site-nav ul {
@@ -117,17 +120,16 @@ nav.site-nav ul {
 }
 
 nav.site-nav a {
-    font-size: 13px;
-    font-weight: 600;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 19px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    color: #333;
-    letter-spacing: 0.5px;
-    padding: 4px 0;
+    color: #222;
+    padding: 2px 4px;
 }
 
 nav.site-nav a:hover {
-    color: #990000;
-    text-decoration: underline;
+    color: #ff3333; /* Anonymous Kırmızısı */
 }
 
 /* ==========================================================================
@@ -141,21 +143,21 @@ nav.site-nav a:hover {
 }
 
 .section-label {
-    font-size: 11px;
-    font-weight: 700;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     background: #111;
     color: #fff;
-    padding: 3px 8px;
+    padding: 3px 10px;
     border-radius: 2px;
     display: inline-block;
     margin-bottom: 16px;
-    letter-spacing: 0.6px;
 }
 
 .feed-container {
     border: 1px solid #111;
-    border-radius: 3px;
+    border-radius: 2px;
     background: #fff;
     padding: 26px;
 }
@@ -173,22 +175,22 @@ nav.site-nav a:hover {
 }
 
 .feed-title {
-    font-family: 'Newsreader', Georgia, serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 23px;
     font-weight: 600;
-    line-height: 1.35;
-    letter-spacing: -0.015em;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
     margin-bottom: 8px;
 }
 
 .feed-title a:hover {
-    color: #990000;
+    color: #ff3333;
 }
 
 .feed-summary {
-    font-size: 15px;
+    font-size: 14.5px;
     color: #444;
-    line-height: 1.65;
+    line-height: 1.6;
     margin-bottom: 12px;
 }
 
@@ -204,20 +206,19 @@ nav.site-nav a:hover {
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    font-size: 12.5px;
+    font-size: 12px;
     color: #555;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .meta-category {
+    font-family: 'Bebas Neue', Impact, sans-serif;
     background: #111;
     color: #fff;
-    font-size: 10.5px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 3px 8px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 2px 8px;
     border-radius: 2px;
-    letter-spacing: 0.5px;
 }
 
 .meta-separator {
@@ -230,21 +231,21 @@ nav.site-nav a:hover {
     gap: 7px;
 }
 
-/* Yumuşak Dokunmatik Mini Etiketler */
 .mini-tag {
-    font-size: 11.5px;
+    font-size: 11px;
     color: #444;
     background: #f0f0f0;
     border: 1px solid #dcdcdc;
-    border-radius: 3px;
-    padding: 2px 8px;
-    text-transform: lowercase;
+    border-radius: 2px;
+    padding: 2px 7px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .mini-tag:hover {
-    background: #111;
+    background: #ff3333;
     color: #fff;
-    border-color: #111;
+    border-color: #ff3333;
 }
 
 /* ==========================================================================
@@ -259,7 +260,7 @@ nav.site-nav a:hover {
 .featured-container,
 .archive-container {
     border: 1px solid #111;
-    border-radius: 3px;
+    border-radius: 2px;
     background: #fff;
     padding: 22px;
 }
@@ -269,12 +270,11 @@ nav.site-nav a:hover {
     height: 220px;
     background-color: #eee;
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 2px;
     margin-bottom: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #888;
     overflow: hidden;
 }
 
@@ -285,20 +285,20 @@ nav.site-nav a:hover {
 }
 
 .featured-title {
-    font-family: 'Newsreader', Georgia, serif;
-    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
     font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: -0.02em;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
     margin-bottom: 10px;
 }
 
 .featured-title a:hover {
-    color: #990000;
+    color: #ff3333;
 }
 
 .featured-summary {
-    font-size: 14.5px;
+    font-size: 14px;
     color: #333;
     line-height: 1.6;
     margin-bottom: 14px;
@@ -328,7 +328,7 @@ nav.site-nav a:hover {
 .archive-month-trigger {
     padding: 10px 0;
     cursor: pointer;
-    font-size: 13.5px;
+    font-size: 14px;
     font-weight: 600;
     display: flex;
     justify-content: space-between;
@@ -337,9 +337,7 @@ nav.site-nav a:hover {
     user-select: none;
 }
 
-.archive-month-trigger::-webkit-details-marker {
-    display: none;
-}
+.archive-month-trigger::-webkit-details-marker { display: none; }
 
 .archive-month-trigger::before {
     content: "▶";
@@ -353,7 +351,7 @@ nav.site-nav a:hover {
 }
 
 .archive-month-trigger:hover .month-name {
-    color: #990000;
+    color: #ff3333;
 }
 
 .archive-count {
@@ -369,7 +367,7 @@ nav.site-nav a:hover {
 .drawer-post-list {
     list-style: none;
     padding: 0 0 10px 18px;
-    font-size: 12.5px;
+    font-size: 13px;
 }
 
 .drawer-post-list li {
@@ -383,7 +381,7 @@ nav.site-nav a:hover {
 }
 
 .drawer-post-list a:hover {
-    color: #990000;
+    color: #ff3333;
     text-decoration: underline;
 }
 
@@ -405,12 +403,13 @@ nav.site-nav a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    font-size: 13.5px;
-    font-weight: 600;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.8px;
 }
 
 .category-sidebar-list a:hover {
-    color: #990000;
+    color: #ff3333;
 }
 
 /* ==========================================================================
@@ -425,52 +424,53 @@ nav.site-nav a:hover {
 
 article.post-container {
     border: 1px solid #111;
-    border-radius: 3px;
+    border-radius: 2px;
     background: #fff;
     padding: 38px;
 }
 
 .post-breadcrumb {
-    font-size: 12px;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: #777;
-    font-weight: 600;
     margin-bottom: 16px;
-    letter-spacing: 0.5px;
 }
 
 .post-breadcrumb a:hover {
-    color: #990000;
+    color: #ff3333;
 }
 
 .post-title {
-    font-family: 'Newsreader', Georgia, serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 38px;
-    line-height: 1.25;
+    line-height: 1.2;
     font-weight: 700;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
     margin-bottom: 18px;
 }
 
 .post-lead {
-    font-size: 18px;
-    line-height: 1.65;
+    font-size: 17px;
+    line-height: 1.6;
     color: #333;
     font-weight: 500;
     margin-bottom: 24px;
-    border-left: 3px solid #111;
+    border-left: 3px solid #ff3333;
     padding-left: 18px;
 }
 
 .post-meta-bar {
     display: flex;
     justify-content: space-between;
-    font-size: 12.5px;
+    font-size: 12px;
     color: #666;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     padding: 11px 0;
     margin-bottom: 28px;
+    font-weight: 600;
 }
 
 .post-main-image {
@@ -478,7 +478,7 @@ article.post-container {
     max-height: 460px;
     background: #eee;
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 2px;
     margin-bottom: 28px;
     overflow: hidden;
 }
@@ -490,14 +490,16 @@ article.post-container {
 }
 
 .post-content p {
-    font-size: 17px;
-    line-height: 1.85;
+    font-size: 16.5px;
+    line-height: 1.8;
     margin-bottom: 24px;
 }
 
 .post-content h3 {
-    font-family: 'Newsreader', Georgia, serif;
-    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
     margin: 36px 0 16px 0;
     border-bottom: 1px solid #eee;
     padding-bottom: 6px;
@@ -507,10 +509,9 @@ article.post-container {
     margin: 28px 0;
     padding: 16px 22px;
     background: #f9f9f9;
-    border-left: 4px solid #990000;
-    border-radius: 0 3px 3px 0;
+    border-left: 4px solid #ff3333;
     font-style: italic;
-    font-size: 17px;
+    font-size: 16.5px;
 }
 
 .post-tags {
@@ -524,9 +525,9 @@ article.post-container {
 }
 
 .tag-title {
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.8px;
     margin-right: 4px;
 }
 
@@ -534,34 +535,33 @@ article.post-container {
     font-size: 11.5px;
     background: #f0f0f0;
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 2px;
     padding: 4px 10px;
     color: #333;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .tag-pill:hover {
-    background: #111;
+    background: #ff3333;
     color: #fff;
-    border-color: #111;
+    border-color: #ff3333;
 }
 
-/* Post Detay Yan Sütun */
 aside.post-sidebar {
     border: 1px solid #111;
-    border-radius: 3px;
+    border-radius: 2px;
     background: #fff;
     padding: 22px;
 }
 
 .sidebar-section-title {
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
     background: #111;
     color: #fff;
-    padding: 4px 8px;
+    padding: 4px 10px;
     border-radius: 2px;
     display: inline-block;
     margin-bottom: 16px;
@@ -580,15 +580,15 @@ aside.post-sidebar {
 }
 
 .sidebar-item-title {
-    font-family: 'Newsreader', Georgia, serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.35;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    line-height: 1.2;
     margin-bottom: 6px;
 }
 
 .sidebar-item-title a:hover {
-    color: #990000;
+    color: #ff3333;
 }
 
 .sidebar-item-meta {
@@ -596,9 +596,6 @@ aside.post-sidebar {
     color: #777;
 }
 
-/* ==========================================================================
-   YENİDEN DÜZENLENEN MİNİMALİST PAYLAŞIM ALANI (Sorun Çözüldü)
-   ========================================================================== */
 .post-share-bar {
     display: flex;
     flex-direction: column;
@@ -609,15 +606,14 @@ aside.post-sidebar {
     margin: 35px 0 25px 0;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
-    background: transparent; /* O çirkin kutu lekesi tamamen kaldırıldı */
+    background: transparent;
 }
 
 .share-title {
-    font-size: 11.5px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
     color: #555;
-    letter-spacing: 0.8px;
 }
 
 .share-buttons {
@@ -633,18 +629,17 @@ aside.post-sidebar {
     width: 38px;
     height: 38px;
     border: 1px solid #111;
-    border-radius: 4px; /* Hafif dokunmatik kavis */
+    border-radius: 2px;
     color: #111;
     font-size: 15px;
     background: #fff;
 }
 
 .share-btn:hover {
-    background: #111;
+    background: #ff3333;
     color: #fff;
+    border-color: #ff3333;
 }
-
-
 
 /* ==========================================================================
    6. SAYFALAR (Arşiv, Kategoriler, Hakkımızda)
@@ -652,7 +647,7 @@ aside.post-sidebar {
 .archive-page-container,
 .page-container {
     border: 1px solid #111;
-    border-radius: 3px;
+    border-radius: 2px;
     background: #fff;
     padding: 38px;
 }
@@ -665,17 +660,16 @@ aside.post-sidebar {
 
 .archive-main-title,
 .page-title {
-    font-family: 'Newsreader', Georgia, serif;
-    font-size: 34px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 42px;
+    letter-spacing: 1px;
 }
 
 .archive-main-desc,
 .page-lead {
     font-size: 15px;
     color: #555;
-    margin-top: 8px;
+    margin-top: 4px;
 }
 
 .archive-group {
@@ -683,21 +677,19 @@ aside.post-sidebar {
 }
 
 .archive-month-title {
-    font-size: 17px;
-    font-family: 'Newsreader', Georgia, serif;
-    font-weight: 600;
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
     background: #f4f4f4;
-    padding: 9px 14px;
-    border-left: 4px solid #111;
-    border-radius: 0 3px 3px 0;
+    padding: 6px 14px;
+    border-left: 4px solid #ff3333;
     margin-bottom: 14px;
 }
 
 .archive-month-title .badge {
-    font-size: 11px;
+    font-size: 12px;
     font-family: 'Inter', sans-serif;
     color: #666;
-    font-weight: normal;
 }
 
 .archive-posts-list {
@@ -723,14 +715,7 @@ aside.post-sidebar {
 }
 
 .archive-posts-list a:hover {
-    color: #990000;
-    text-decoration: underline;
-}
-
-.archive-posts-list .category {
-    font-size: 11.5px;
-    color: #666;
-    margin-left: 8px;
+    color: #ff3333;
 }
 
 .tags-cloud-bar {
@@ -743,7 +728,7 @@ aside.post-sidebar {
 }
 
 /* ==========================================================================
-   7. EMBEDLER & FOOTER
+   7. EMBEDLER & SAYFALAMA
    ========================================================================== */
 .video-embed-container {
     position: relative;
@@ -753,7 +738,6 @@ aside.post-sidebar {
     max-width: 100%;
     margin: 28px 0;
     border: 1px solid #111;
-    border-radius: 3px;
     background: #000;
 }
 
@@ -772,12 +756,49 @@ aside.post-sidebar {
     display: block;
     margin: 24px auto;
     border: 1px solid #ddd;
-    border-radius: 3px;
+}
+
+.pagination-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 25px;
+    padding-top: 10px;
+    border-top: none;
+}
+
+.page-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 34px;
+    height: 34px;
+    padding: 0 10px;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    background: #fff;
+    color: #333;
+}
+
+.page-num:hover {
+    background: #ff3333;
+    color: #fff;
+    border-color: #ff3333;
+}
+
+.page-num.active {
+    background: #111;
+    color: #fff;
+    border-color: #111;
 }
 
 .site-footer {
     border: 1px solid #111;
-    border-radius: 3px;
+    border-radius: 2px;
     background: #fff;
     margin-top: 45px;
     padding: 18px 24px;
@@ -799,8 +820,7 @@ aside.post-sidebar {
 }
 
 .footer-right a:hover {
-    color: #990000;
-    text-decoration: underline;
+    color: #ff3333;
 }
 
 /* ==========================================================================
@@ -847,7 +867,7 @@ aside.post-sidebar {
     }
 
     .post-title {
-        font-size: 28px;
+        font-size: 34px;
     }
 
     aside.post-sidebar {
@@ -862,7 +882,7 @@ aside.post-sidebar {
 }
 
 /* ==========================================================================
-   9. MONOKROM RESMİ KARANLIK MOD (NET PARLAK ÇERÇEVELER)
+   9. ANONYMOUS TARZI OYUN KARANLIK MODU (Dark Gaming Portal)
    ========================================================================== */
 body.dark-mode {
     background-color: #0d0d0d;
@@ -879,7 +899,7 @@ body.dark-mode .archive-page-container,
 body.dark-mode .page-container,
 body.dark-mode .site-footer {
     background-color: #141414;
-    border-color: #2e2e2e;
+    border-color: #242424;
     color: #d8d8d8;
 }
 
@@ -895,10 +915,10 @@ body.dark-mode .archive-accordion,
 body.dark-mode .archive-month-drawer,
 body.dark-mode .archive-header-box,
 body.dark-mode .tags-cloud-bar {
-    border-color: #242424;
+    border-color: #222222;
 }
 
-/* Başlıklar */
+/* Başlıklar: Anonymous gibi Bembeyaz ve Sert */
 body.dark-mode .feed-title a,
 body.dark-mode .featured-title a,
 body.dark-mode .post-title,
@@ -906,20 +926,19 @@ body.dark-mode .archive-main-title,
 body.dark-mode .page-title,
 body.dark-mode .logo-title,
 body.dark-mode .sidebar-item-title a,
-body.dark-mode .category-sidebar-list a {
+body.dark-mode .category-sidebar-list a,
+body.dark-mode nav.site-nav a {
     color: #ffffff;
 }
 
+/* Vurgu Kırmızısı */
 body.dark-mode .feed-title a:hover,
 body.dark-mode .featured-title a:hover,
 body.dark-mode .sidebar-item-title a:hover,
 body.dark-mode nav.site-nav a:hover,
-body.dark-mode .archive-posts-list a:hover {
-    color: #ff3b3b;
-}
-
-body.dark-mode nav.site-nav a {
-    color: #e6e6e6;
+body.dark-mode .archive-posts-list a:hover,
+body.dark-mode .footer-right a:hover {
+    color: #ff3333;
 }
 
 body.dark-mode .feed-summary,
@@ -930,16 +949,15 @@ body.dark-mode .site-tagline,
 body.dark-mode .archive-main-desc,
 body.dark-mode .page-lead,
 body.dark-mode .archive-desc,
-body.dark-mode .footer-simple-content,
-body.dark-mode .footer-right a {
-    color: #b5b5b5;
+body.dark-mode .footer-simple-content {
+    color: #9e9e9e;
 }
 
-/* İŞTE BURADA: Karanlık Modda Belirgin Beyaz/Gümüş Çerçeveli Rozetler */
+/* Rozetler */
 body.dark-mode .section-label,
 body.dark-mode .meta-category {
     background: #111111;
-    border: 1px solid #777777; /* Parlak belirgin beyaz sınır */
+    border: 1px solid #555555;
     color: #ffffff;
 }
 
@@ -947,135 +965,86 @@ body.dark-mode .meta-date,
 body.dark-mode .meta-author,
 body.dark-mode .sidebar-item-meta,
 body.dark-mode .archive-posts-list .date {
-    color: #888888;
+    color: #777777;
 }
 
-/* Etiket Hapları (Tagler) - Belirgin ve Tıklanabilir */
+/* Etiketler */
 body.dark-mode .mini-tag,
 body.dark-mode .tag-pill,
 body.dark-mode .archive-count {
-    background: #1a1a1a;
-    border: 1px solid #555555; /* Belirgin gümüş sınır */
+    background: #1c1c1c;
+    border: 1px solid #444;
     color: #ffffff;
 }
 
 body.dark-mode .mini-tag:hover,
 body.dark-mode .tag-pill:hover {
-    background: #ffffff;
-    color: #000000;
-    border-color: #ffffff;
+    background: #ff3333;
+    color: #ffffff;
+    border-color: #ff3333;
 }
 
 body.dark-mode .theme-toggle-btn {
-    border-color: #666;
+    border-color: #555;
     color: #ffcc00;
 }
 
 body.dark-mode .theme-toggle-btn:hover {
     background: #ffcc00;
-    color: #000000;
+    color: #000;
 }
 
 body.dark-mode .archive-month-title,
 body.dark-mode .archive-page-trigger {
-    background: #1c1c1c;
+    background: #1a1a1a;
     color: #ffffff;
-    border-left-color: #ffffff;
+    border-left-color: #ff3333;
 }
 
-/* Paylaşım Alanı (Karanlık Modda Şeffaf & Jilet Gibi Çizgili) */
 body.dark-mode .post-share-bar {
     background: transparent !important;
-    border-color: #282828;
+    border-color: #242424;
 }
 
 body.dark-mode .share-title {
-    color: #aaaaaa;
+    color: #888;
 }
 
 body.dark-mode .share-btn {
     background: #141414;
-    border-color: #555555; /* Belirgin şık buton çerçeveleri */
-    color: #ffffff;
+    border-color: #444;
+    color: #fff;
 }
 
 body.dark-mode .share-btn:hover {
-    background: #ffffff;
-    color: #000000;
-    border-color: #ffffff;
+    background: #ff3333;
+    color: #fff;
+    border-color: #ff3333;
 }
 
 body.dark-mode .post-content p {
-    color: #d1d1d1;
+    color: #cccccc;
 }
 
 body.dark-mode .post-content blockquote {
     background: #181818;
     color: #e0e0e0;
-    border-left-color: #ff3b3b;
-}
-
-body.dark-mode .disqus-container {
-    border-top-color: #282828;
-}
-
-/* DİNAMİK SAYFALAMA BUTONLARI (Çift Çizgi Kaldırıldı) */
-.pagination-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-top: 25px;
-    padding-top: 10px;
-    border-top: none; /* Üstteki fazla çizgi silindi! */
-}
-
-.page-num {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 34px;
-    height: 34px;
-    padding: 0 10px;
-    font-size: 13px;
-    font-weight: 600;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    background: #fff;
-    color: #333;
-}
-
-.page-num:hover {
-    background: #111;
-    color: #fff;
-    border-color: #111;
-}
-
-.page-num.active {
-    background: #111;
-    color: #fff;
-    border-color: #111;
-}
-
-/* Karanlık Modda Sayfalama */
-body.dark-mode .pagination-bar {
-    border-color: #242424;
-}
-
-body.dark-mode .page-num {
-    background: #181818;
-    border-color: #444;
-    color: #ffffff;
-}
-
-body.dark-mode .page-num:hover,
-body.dark-mode .page-num.active {
-    background: #ffffff;
-    color: #000000;
-    border-color: #ffffff;
+    border-left-color: #ff3333;
 }
 
 body.dark-mode .disqus-container {
     border-top: none;
+}
+
+body.dark-mode .page-num {
+    background: #181818;
+    border-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .page-num:hover,
+body.dark-mode .page-num.active {
+    background: #ff3333;
+    color: #fff;
+    border-color: #ff3333;
 }
