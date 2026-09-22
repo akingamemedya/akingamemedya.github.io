@@ -5,12 +5,20 @@
     <description>Bağımsız oyun ve teknoloji haberleri</description>
     <link>https://akingamemedya.github.io/</link>
     <atom:link href="https://akingamemedya.github.io/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 22 Sep 2026 20:05:02 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 20:11:07 +0300</lastBuildDate>
+    
+      <item>
+        <title>Xbox&apos;ta Yeni İşten Çıkarma Dalgası: 268 Çalışan Daha Etkilendi</title>
+        <description>Microsoft&apos;un Xbox bölümünde devam eden yeniden yapılanmanın yeni aşamasında 268 pozisyon kaldırıldı. Temmuz ayında açıklanan 3.200 kişilik planın yaklaşık dörtte üçünün tamamlandığı belirtilirken, bazı Xbox stüdyolarının geleceği ve serilerin yönetim yapısı da değişiyor.</description>
+        <pubDate>Tue, 22 Sep 2026 20:11:05 +0300</pubDate>
+        <link>https://akingamemedya.github.io/oyun/2026/09/22/xbox-ta-yeni-i-ten-karma-dalgas-268-al-an-daha-etkilendi/</link>
+        <guid isPermaLink="true">https://akingamemedya.github.io/oyun/2026/09/22/xbox-ta-yeni-i-ten-karma-dalgas-268-al-an-daha-etkilendi/</guid>
+      </item>
     
       <item>
         <title>Graveyard Keeper 2 Bugün Çıktı: Mezarlık Yönetimi Serisi Geri Döndü</title>
         <description>Graveyard Keeper 2, 22 Eylül 2026 itibarıyla PC ve konsollarda oyuncularla buluştu. Devam oyununda mezarlık yönetimi genişletilirken kasabanın yeniden inşası, üretimin otomasyonu ve zombi işçilerle yeni yönetim mekanikleri öne çıkıyor.</description>
-        <pubDate>Tue, 22 Sep 2026 16:39:00 +0300</pubDate>
+        <pubDate>Tue, 22 Sep 2026 20:10:47 +0300</pubDate>
         <link>https://akingamemedya.github.io/oyun/2026/09/22/graveyard-keeper-2-bug-n-kt-mezarl-k-y-netimi-serisi-geri-d-nd/</link>
         <guid isPermaLink="true">https://akingamemedya.github.io/oyun/2026/09/22/graveyard-keeper-2-bug-n-kt-mezarl-k-y-netimi-serisi-geri-d-nd/</guid>
       </item>
@@ -21,14 +29,6 @@
         <pubDate>Tue, 22 Sep 2026 16:35:00 +0300</pubDate>
         <link>https://akingamemedya.github.io/oyun/2026/09/22/runescape-dragonwilds-1-0-s-r-m-ne-ge-ti-erken-eri-im-d-nemi-sona-erdi/</link>
         <guid isPermaLink="true">https://akingamemedya.github.io/oyun/2026/09/22/runescape-dragonwilds-1-0-s-r-m-ne-ge-ti-erken-eri-im-d-nemi-sona-erdi/</guid>
-      </item>
-    
-      <item>
-        <title>Xbox&apos;ta Yeni İşten Çıkarma Dalgası: 268 Çalışan Daha Etkilendi</title>
-        <description>Microsoft&apos;un Xbox bölümünde devam eden yeniden yapılanmanın yeni aşamasında 268 pozisyon kaldırıldı. Temmuz ayında açıklanan 3.200 kişilik planın yaklaşık dörtte üçünün tamamlandığı belirtilirken, bazı Xbox stüdyolarının geleceği ve serilerin yönetim yapısı da değişiyor.</description>
-        <pubDate>Tue, 22 Sep 2026 16:31:00 +0300</pubDate>
-        <link>https://akingamemedya.github.io/oyun/2026/09/22/xbox-ta-yeni-i-ten-karma-dalgas-268-al-an-daha-etkilendi/</link>
-        <guid isPermaLink="true">https://akingamemedya.github.io/oyun/2026/09/22/xbox-ta-yeni-i-ten-karma-dalgas-268-al-an-daha-etkilendi/</guid>
       </item>
     
   </channel>
