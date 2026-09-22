@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Google ve Arama Motoru Botları İçin Otomatik Harita Yolu
+Sitemap: https://akingamemedya.github.io/sitemap.xml
