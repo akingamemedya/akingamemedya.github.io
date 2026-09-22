@@ -3,16 +3,16 @@
   <channel>
     <title>Akın Medya</title>
     <description>Bağımsız teknoloji haberleri</description>
-    <link>https://orbitnode-dev.github.io/</link>
-    <atom:link href="https://orbitnode-dev.github.io/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 22 Sep 2026 18:58:34 +0300</lastBuildDate>
+    <link>https://akingamemedya.github.io/</link>
+    <atom:link href="https://akingamemedya.github.io/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Sep 2026 19:00:31 +0300</lastBuildDate>
     
       <item>
         <title>Bu bir test başlığıdır</title>
         <description>Yakında sizlerleyiz!</description>
         <pubDate>Mon, 21 Sep 2026 00:00:00 +0300</pubDate>
-        <link>https://orbitnode-dev.github.io/test/2026/09/21/bu-bir-test-ba-l-d-r/</link>
-        <guid isPermaLink="true">https://orbitnode-dev.github.io/test/2026/09/21/bu-bir-test-ba-l-d-r/</guid>
+        <link>https://akingamemedya.github.io/test/2026/09/21/bu-bir-test-ba-l-d-r/</link>
+        <guid isPermaLink="true">https://akingamemedya.github.io/test/2026/09/21/bu-bir-test-ba-l-d-r/</guid>
       </item>
     
   </channel>
