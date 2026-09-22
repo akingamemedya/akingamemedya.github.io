@@ -1,10 +1,11 @@
 /* ==========================================================================
-   1. SIFIRLAMA VE OYUN BASINI TIPOGRAFISI (Bebas Neue & Inter)
+   1. SIFIRLAMA VE SERT KÖŞELİ OYUN BASINI TEMASI (0px Radius)
    ========================================================================== */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border-radius: 0px !important; /* TÜM KÖŞELER TAMAMEN KESKİN VE SERT */
 }
 
 body {
@@ -28,12 +29,11 @@ a {
 }
 
 /* ==========================================================================
-   2. HEADER & MENÜ (Anonymous Çeviri Stili Tok Menü)
+   2. HEADER & MENÜ (Sert Hatlar & Bebas Neue)
    ========================================================================== */
 header.site-header {
     background: #fff;
     border: 1px solid #111;
-    border-radius: 2px;
     margin-bottom: 25px;
     padding: 16px 28px 0 28px;
 }
@@ -57,7 +57,6 @@ header.site-header {
 .theme-toggle-btn {
     background: transparent;
     border: 1px solid #111;
-    border-radius: 2px;
     padding: 4px 10px;
     cursor: pointer;
     font-size: 13px;
@@ -84,10 +83,8 @@ header.site-header {
     width: 52px;
     height: 52px;
     object-fit: contain;
-    border-radius: 4px;
 }
 
-/* ANONYMOUS TARZI BÜYÜK TOK LOGO */
 .logo-title {
     font-family: 'Bebas Neue', Impact, sans-serif;
     font-size: 46px;
@@ -105,7 +102,6 @@ header.site-header {
     font-weight: 500;
 }
 
-/* MENÜ: Sert ve Tok Başlıklar */
 nav.site-nav {
     border-top: 1px solid #e8e8e8;
     padding: 10px 0;
@@ -129,7 +125,7 @@ nav.site-nav a {
 }
 
 nav.site-nav a:hover {
-    color: #ff3333; /* Anonymous Kırmızısı */
+    color: #ff3333;
 }
 
 /* ==========================================================================
@@ -150,14 +146,12 @@ nav.site-nav a:hover {
     background: #111;
     color: #fff;
     padding: 3px 10px;
-    border-radius: 2px;
     display: inline-block;
     margin-bottom: 16px;
 }
 
 .feed-container {
     border: 1px solid #111;
-    border-radius: 2px;
     background: #fff;
     padding: 26px;
 }
@@ -188,9 +182,9 @@ nav.site-nav a:hover {
 }
 
 .feed-summary {
-    font-size: 14.5px;
+    font-size: 15px;
     color: #444;
-    line-height: 1.6;
+    line-height: 1.65;
     margin-bottom: 12px;
 }
 
@@ -218,7 +212,6 @@ nav.site-nav a:hover {
     font-size: 14px;
     letter-spacing: 1px;
     padding: 2px 8px;
-    border-radius: 2px;
 }
 
 .meta-separator {
@@ -236,7 +229,6 @@ nav.site-nav a:hover {
     color: #444;
     background: #f0f0f0;
     border: 1px solid #dcdcdc;
-    border-radius: 2px;
     padding: 2px 7px;
     text-transform: uppercase;
     font-weight: 600;
@@ -260,7 +252,6 @@ nav.site-nav a:hover {
 .featured-container,
 .archive-container {
     border: 1px solid #111;
-    border-radius: 2px;
     background: #fff;
     padding: 22px;
 }
@@ -270,7 +261,6 @@ nav.site-nav a:hover {
     height: 220px;
     background-color: #eee;
     border: 1px solid #ddd;
-    border-radius: 2px;
     margin-bottom: 16px;
     display: flex;
     align-items: center;
@@ -298,7 +288,7 @@ nav.site-nav a:hover {
 }
 
 .featured-summary {
-    font-size: 14px;
+    font-size: 14.5px;
     color: #333;
     line-height: 1.6;
     margin-bottom: 14px;
@@ -360,7 +350,6 @@ nav.site-nav a:hover {
     font-size: 11px;
     font-weight: bold;
     padding: 2px 7px;
-    border-radius: 2px;
     border: 1px solid #ddd;
 }
 
@@ -413,7 +402,7 @@ nav.site-nav a:hover {
 }
 
 /* ==========================================================================
-   5. POST DETAY SAYFASI
+   5. POST DETAY SAYFASI & ZENGİN MARKDOWN LİNKLERİ
    ========================================================================== */
 .post-layout {
     display: grid;
@@ -424,7 +413,6 @@ nav.site-nav a:hover {
 
 article.post-container {
     border: 1px solid #111;
-    border-radius: 2px;
     background: #fff;
     padding: 38px;
 }
@@ -452,8 +440,8 @@ article.post-container {
 }
 
 .post-lead {
-    font-size: 17px;
-    line-height: 1.6;
+    font-size: 17.5px;
+    line-height: 1.65;
     color: #333;
     font-weight: 500;
     margin-bottom: 24px;
@@ -478,7 +466,6 @@ article.post-container {
     max-height: 460px;
     background: #eee;
     border: 1px solid #ddd;
-    border-radius: 2px;
     margin-bottom: 28px;
     overflow: hidden;
 }
@@ -491,8 +478,22 @@ article.post-container {
 
 .post-content p {
     font-size: 16.5px;
-    line-height: 1.8;
+    line-height: 1.85;
     margin-bottom: 24px;
+}
+
+/* MARKDOWN İÇİNDEKİ TÜM LİNKLER İÇİN ÖZEL ÇÖZÜM */
+.post-content a {
+    color: #ff3333 !important;
+    text-decoration: underline !important;
+    font-weight: 600;
+    word-break: break-all;
+    cursor: pointer;
+}
+
+.post-content a:hover {
+    color: #111 !important;
+    text-decoration: none !important;
 }
 
 .post-content h3 {
@@ -512,6 +513,24 @@ article.post-container {
     border-left: 4px solid #ff3333;
     font-style: italic;
     font-size: 16.5px;
+}
+
+.post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 14.5px;
+}
+
+.post-content th, .post-content td {
+    border: 1px solid #ddd;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+.post-content th {
+    background: #f4f4f4;
+    font-weight: 700;
 }
 
 .post-tags {
@@ -535,7 +554,6 @@ article.post-container {
     font-size: 11.5px;
     background: #f0f0f0;
     border: 1px solid #ddd;
-    border-radius: 2px;
     padding: 4px 10px;
     color: #333;
     text-transform: uppercase;
@@ -548,9 +566,9 @@ article.post-container {
     border-color: #ff3333;
 }
 
+/* Yan Sütun */
 aside.post-sidebar {
     border: 1px solid #111;
-    border-radius: 2px;
     background: #fff;
     padding: 22px;
 }
@@ -562,7 +580,6 @@ aside.post-sidebar {
     background: #111;
     color: #fff;
     padding: 4px 10px;
-    border-radius: 2px;
     display: inline-block;
     margin-bottom: 16px;
 }
@@ -580,10 +597,10 @@ aside.post-sidebar {
 }
 
 .sidebar-item-title {
-    font-family: 'Bebas Neue', Impact, sans-serif;
-    font-size: 20px;
-    letter-spacing: 0.6px;
-    line-height: 1.2;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.3;
     margin-bottom: 6px;
 }
 
@@ -596,6 +613,7 @@ aside.post-sidebar {
     color: #777;
 }
 
+/* Paylaşım Alanı (Tek Çizgi) */
 .post-share-bar {
     display: flex;
     flex-direction: column;
@@ -629,7 +647,6 @@ aside.post-sidebar {
     width: 38px;
     height: 38px;
     border: 1px solid #111;
-    border-radius: 2px;
     color: #111;
     font-size: 15px;
     background: #fff;
@@ -641,13 +658,18 @@ aside.post-sidebar {
     border-color: #ff3333;
 }
 
+.disqus-container {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: none;
+}
+
 /* ==========================================================================
-   6. SAYFALAR (Arşiv, Kategoriler, Hakkımızda)
+   6. DİĞER SAYFALAR (Arşiv, Kategoriler, Hakkımızda)
    ========================================================================== */
 .archive-page-container,
 .page-container {
     border: 1px solid #111;
-    border-radius: 2px;
     background: #fff;
     padding: 38px;
 }
@@ -779,7 +801,6 @@ aside.post-sidebar {
     font-size: 13px;
     font-weight: bold;
     border: 1px solid #ddd;
-    border-radius: 2px;
     background: #fff;
     color: #333;
 }
@@ -798,7 +819,6 @@ aside.post-sidebar {
 
 .site-footer {
     border: 1px solid #111;
-    border-radius: 2px;
     background: #fff;
     margin-top: 45px;
     padding: 18px 24px;
@@ -882,7 +902,7 @@ aside.post-sidebar {
 }
 
 /* ==========================================================================
-   9. ANONYMOUS TARZI OYUN KARANLIK MODU (Dark Gaming Portal)
+   9. ANONYMOUS TARZI OYUN KARANLIK MODU (Monokrom & Sert)
    ========================================================================== */
 body.dark-mode {
     background-color: #0d0d0d;
@@ -918,7 +938,7 @@ body.dark-mode .tags-cloud-bar {
     border-color: #222222;
 }
 
-/* Başlıklar: Anonymous gibi Bembeyaz ve Sert */
+/* Başlıklar */
 body.dark-mode .feed-title a,
 body.dark-mode .featured-title a,
 body.dark-mode .post-title,
@@ -931,7 +951,6 @@ body.dark-mode nav.site-nav a {
     color: #ffffff;
 }
 
-/* Vurgu Kırmızısı */
 body.dark-mode .feed-title a:hover,
 body.dark-mode .featured-title a:hover,
 body.dark-mode .sidebar-item-title a:hover,
@@ -1022,6 +1041,15 @@ body.dark-mode .share-btn:hover {
     border-color: #ff3333;
 }
 
+/* Makale İçi Linkler */
+body.dark-mode .post-content a {
+    color: #ff4d4d !important;
+}
+
+body.dark-mode .post-content a:hover {
+    color: #ffffff !important;
+}
+
 body.dark-mode .post-content p {
     color: #cccccc;
 }
@@ -1030,6 +1058,16 @@ body.dark-mode .post-content blockquote {
     background: #181818;
     color: #e0e0e0;
     border-left-color: #ff3333;
+}
+
+body.dark-mode .post-content th,
+body.dark-mode .post-content td {
+    border-color: #2b2b2b;
+}
+
+body.dark-mode .post-content th {
+    background: #1a1a1a;
+    color: #fff;
 }
 
 body.dark-mode .disqus-container {
