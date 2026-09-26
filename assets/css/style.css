@@ -85,9 +85,11 @@ header.site-header {
     object-fit: contain;
 }
 
+/* LOGO BAŞLIĞI HER SAYFADA AYNI KALINLIKTA DURSUN */
 .logo-title {
     font-family: 'Bebas Neue', Impact, sans-serif;
     font-size: 46px;
+    font-weight: bold; /* İŞTE BU: İNCELMEYİ TAMAMEN ENGELLER */
     letter-spacing: 1.5px;
     text-transform: uppercase;
     line-height: 1;
